@@ -1,0 +1,61 @@
+2    Ioctaicos: 1 for octahadron, 2 for icosahedron
+2 0 1 3 2      Level of triangulation
+
+1.00 1.00 | 4.0 4.0 1.00 1.00        aspect ratios: b/a c/a
+1.00 1.00             equivalent radius
+0.00      cx (coordinates of the particle center)
+0.00  cy (coordinates of the particle center)
+0.00      cz (coordinates of the particle center)
+0.0 0.0 0.0 0.20 0.10 -0.50   rotation angles: phix, phiy,phiz
+0.95 0.75  contact angle scaled with pi (for Iflow=6)
+
+9 7    number of Gauss_triangle base points for regular integrals
+4      number of Gauss_Legendre base points for singular integrals
+
+1.0    fluid viscosity
+
+1.0    incident velocity          (for Iflow=4)
+1.0    shear rate above the array (for Iflow=5)
+
+-1.2    wall:  y position of wall (for Iflow=2)
+
+1.0 0.0         0.0  First base vector  (triply periodic flow)
+0.5 0.866025    0.0  Second base vector (triply periodic flow)
+0.0 0.0         1.0  Third base vector  (triply periodic flow)
+
+5    Max1 for summation of the periodic Green's function
+5    Max2 for summation of the periodic Green's function
+
+1.0 0.0   First  base vector  (doubly periodic flow, Iflow=7)
+0.0 1.0   Second base vector  (doubly flow, Iflow=7)
+2 2       Ns, Np (sgf)
+
+2      Method for sgf_3d_2p (Enter 1 or 2) (Iflow = 3, 4)
+0.001  differentiation step for computing sgf_3d_2p for method=2
+
+0      Iprec: Index for preconditioning (0 for NO or 1 for YES)
+3      Iregularize:  Index for regularization 
+
+1 4    modes for shape optimisation (indices of the GRT entry)
+
+0      ell parameter for augmented lagrangian
+
+0      b parameter for augmented lagrangian
+
+12.557    constant volume V0 for augmented lagrangian
+
+------------------------------
+LEGEND:
+
+Iflow: 1  flow due to particle motion in free space
+       2  flow due to particle motion in a domain
+          bounded by a plane wall at x = wall
+       3  flow due to particle motion 
+          in a triply-periodic array
+       4  shear flow normal to a doubly -periodic array
+       5  shear flow over a doubly -periodic array
+       6  flow over a bump
+
+Iregularize:  1
+              2
+              3 Deflate the integral equation

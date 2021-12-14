@@ -1,0 +1,27 @@
+9 7    number of Gauss_triangle base points for regular integrals
+4      number of Gauss_Legendre base points for singular integrals
+
+1.0    fluid viscosity
+
+5    Max1 for summation of the periodic Green's function
+5    Max2 for summation of the periodic Green's function
+
+2 2       Ns, Np (sgf)
+
+0      Iprec: Index for preconditioning (0 for NO or 1 for YES)
+3      Iregularize:  Index for regularization 
+
+1 4    modes for shape optimisation (indices of the GRT entry)
+
+0      ell parameter for augmented lagrangian
+
+0      b parameter for augmented lagrangian
+
+12.557    constant volume V0 for augmented lagrangian
+
+------------------------------
+LEGEND:
+
+Iregularize:  1
+              2
+              3 Deflate the integral equation
